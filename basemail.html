@@ -1,0 +1,200 @@
+       
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <script src="index.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>VIDHYUT!</title>
+    <link rel="icon" href="favicon.png">
+  </head>
+  <body>
+    <div class="top-container">   
+      <img class="top-cloud"  src="images/cloud.png" alt=""> 
+        <h1 class="vidyut">VIDHYUT</h1>
+       <h2 class="vidyut-calc"> ELECTRICITY BILL CALCULATOR</h2>  
+       <img class="elecpole"  src="images/electpole.png" alt="">
+      </div>
+        <div class="middle-container">
+          <div class="heading">
+             <img class="main-icon" src="images/circle-cropped.png" alt="">   
+          </div>
+          <div class="information">
+            <p class="intro">
+              Know Electricity-consumption and conservation
+              A user-friendly portal
+              (Based data-State of Rajasthan)
+            </p>
+              <hr class="rule">
+              <img src="images/file.png" alt="">
+              <h2>Please enter the following information</h2>
+                <div class="form">            
+                    <form method="POST" > 
+                    <label class="bill-units">Enter the billed units</label>
+                    <br>
+                    <input type="text" id="units">
+                    <br>
+                    <label  class="phase">Select the number of phases</label>
+                    <br>
+                    <select id="select-phase">
+                      <option name="Single Phase" value="Single"">Single</option>
+                      <option name="Triple phase" value="Three" >Triple</option>
+                    </select>
+                      <br>
+                    <label class="sanctioned-load">Enter the sanctioned load</label>
+                    <br>
+                    <input type="text" id="load">
+                    <br>
+                      <label class="use">Select your use</label>  
+                      <br>
+                      <select id="select-use">
+                        <option name="Domestic" value="Domestic">Domestic</option>
+                        <br>
+                        <option name="Commercial" value="Commercial" >Commercial</option>
+                      </select>
+                      <br>
+                      <button name="submit" type="button" onclick="f1()">Submit</button>
+                      <p class="output-statement"> You have to pay <span class="output"></span> ₹</p>
+                </form>
+                </div>
+          </div>
+        </div>
+        <hr>
+        <div class="tips">
+          <img src="images/protect-the-planet.png" alt="">
+          <h2>Top 5 Tips 
+            to Conserve electricity</h2>
+          <div class="tip-row">
+            <img class="tip1" src="images/tip1.png" alt="">
+            <h3> Adjust your day-to-day behavio</h3>
+            <p>To reduce energy consumption in your home, you do not necessarily need to go out and purchase energy efficient products. Energy conservation can be as simple as turning off lights or appliances when you do not need them. You can also use energy-intensive appliances less by performing household tasks manually, such as hang-drying your clothes instead of putting them in the dryer, or washing dishes by hand.
+    
+              The behavior adjustments that have the highest potential for utility savings are turning down the heat on your thermostat in the winter and using your air conditioner less in the summer. Heating and cooling costs constitute nearly half of an average home’s utility bills, so these reductions in the intensity and frequency of heating and cooling offer the greatest savings.
+              
+              There are tools you can use to figure out where most of your electricity is going in your home and which appliances are using the most electricity on a day-to-day basis.</p>
+          </div>
+          <div class="tip-row">
+            <img class="tip2" src="images/electricity.png" alt="">
+            <h3>Replace your light bulbs</h3>
+            <p>Traditional incandescent light bulbs consume an excessive amount of electricity and must be replaced more often than their energy efficient alternatives. Halogen incandescent bulbs, compact fluorescent lights (CFLs), and light-emitting diode bulbs (LEDs) use anywhere from 25-80 percent less electricity and last 3 to 25 times longer than traditional bulbs.
+    
+              Although energy efficient bulbs are more expensive off the shelf, their efficient energy use and longer lifetimes mean that they cost less in the long run.</p>
+          </div>
+          <div class="tip-row">
+            <img class="tip3" src="images/power-strip.png" alt="">
+            <h3> Use smart power strips</h3>
+            <p>“Phantom loads,” or the electricity used by electronics when they are turned off or in standby mode, are a major source of energy waste. In fact, it is estimated that 75% of the energy used to power household electronics is consumed when they are switched off, which can cost you up to $200 per year. Smart power strips, also known as advanced power strips, eliminate the problem of phantom loads by shutting off the power to electronics when they are not in use. Smart power strips can be set to turn off at an assigned time, during a period of inactivity, through remote switches, or based on the status of a “master” device.</p>
+          </div> <div class="tip-row">
+            <img class="tip4" src="images/water-heater.png" alt="">
+            <h3> Reduce your water heating expenses</h3>
+            <p>Water heating is a major contributor to your total energy consumption. Other than purchasing an energy efficient water heater, there are three methods of reducing your water heating expenses: you can simply use less hot water, turn down the thermostat on your water heater, or insulate your water heater and the first six feet of hot and cold water pipes.
+    
+              If you are considering replacing your water heater with an efficient model, you should keep in mind two factors: the type of water heater that meets your needs and the type of fuel it will use. For example, tankless water heaters are energy efficient, but they are also a poor choice for large families as they cannot handle multiple and simultaneous uses of hot water. Efficient water heaters can be anywhere between 8% and 300% more energy efficient than a conventional storage water heater.</p>
+          </div>
+        </div> <div class="tip-row">
+          <img class="tip5" src="images/house.png" alt="">
+          <h3> Weatherize your home</h3>
+          <p> Weatherizing, or sealing air leaks around your home, is a great way to reduce your heating and cooling expenses. The most common sources of air leaks into your home are vents, windows, and doors. To prevent these leaks, you should ensure that there are no cracks or openings between the wall and vent, window, or doorframe.
+    
+            To seal air leaks between stationary objects, such as the wall and window frame, you can apply caulk. For cracks between moving objects, such as operable windows and doors, you can apply weather stripping. Weather stripping and caulking are simple air sealing techniques that typically offer a return on investment in less than a year. Air leaks can also occur through openings in the wall, floor, and ceiling from plumbing, ducting, or electrical wiring.
+            
+            </p>
+        </div>
+        </div>
+        <hr class="rule">
+      <div class="bottom-container">
+        <img src="images/taxes.png" alt="">
+        <h2>Tariffs in Rajasthan phase-wise</h2>
+        <div class="table1" >
+          <table class="commercial-table">
+            <tr>   
+           
+            </tr>
+            <tr>
+              <th>Units</th>
+              <th>Cost for 3-phase(In ₹/unit) </th>
+              <th>Cost for 1-phase(In ₹/unit)</th>
+            </tr>
+            <tr>
+              <td>0-150</td>
+              <td>6</td>
+             <td>5.5</td>
+            </tr>
+            <tr>
+              <td>150-300</td>
+              <td>6.2</td>
+              <td>6</td>
+            </tr>
+            <tr>
+              <td>300-500</td>
+              <td>7.1</td>
+              <td>7</td>
+            </tr>
+            <tr>
+              <td>>500</td>
+              <td>7.7</td>
+              <td>7.5</td>
+          </tr>
+          </table>
+          </div>
+          <div class="table2" >    
+          <table class="domestic-table">
+            
+            <tr>
+              <th>Units</th>
+              <th>Cost for 3-phase(In ₹/unit)</th>
+              <th>Cost for 1-phase(In ₹/unit)</th>
+            </tr>
+            <tr>
+              <td>0-150</td>
+              <td>6</td>
+             <td>5.5</td>
+            </tr>
+            <tr>
+              <td>150-300</td>
+              <td>6.5</td>
+              <td>6</td>
+            </tr>
+            <tr>
+              <td>300-500</td>
+              <td>7</td>
+              <td>6.5</td>
+            </tr>
+            <tr>
+              <td>>500</td>
+              <td>7.5</td>
+              <td>7</td>
+          </tr>
+          </table>
+          </div>
+         
+       
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      </div>
+      <hr class="end">
+    
+        
+    
+
+    
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
